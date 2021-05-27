@@ -19,10 +19,10 @@
           <td>{{ user.idade }}</td>
           <td>{{ user.profissao }}</td>
           <td>
-            <button class="btn btn-success">Editar</button>
+            <button class="btn btn-success" [routerLink]="['/users/form', user.nome]">Editar</button>
           </td>
           <td>
-            <button class="btn btn-danger">Deletar</button>
+            <button class="btn btn-danger" (click)="deleteUser(user.nome)">Deletar</button>
           </td>
         </tr>
       </tbody>

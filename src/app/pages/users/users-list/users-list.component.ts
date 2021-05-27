@@ -22,4 +22,13 @@ export class UsersListComponent implements OnInit {
     })
   }
 
+  deleteUser(nome: string) {
+    this.usersService.deleteUser(nome).subscribe(response => {
+    }, (err) => {
+      console.log('erro', err);
+    }, () => {
+      this.getUsers();
+    })
+  }
+
 }
