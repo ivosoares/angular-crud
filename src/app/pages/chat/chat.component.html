@@ -1,0 +1,18 @@
+
+<div class="row w-100">
+  <div class="col-12">
+    <h1 class="card-title">Chat Maneiro</h1>
+    <div class="card" >
+      <div class="card-body">
+        <div class="chat-container mt-5 bg-light text-dark">
+          <ul class="chat-messages-list list-group" id="list-message">
+          </ul>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" [(ngModel)]="message" placeholder="">
+          <button class="btn btn-outline-success" type="button" id="button-addon1" (click)="sendMessage()">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

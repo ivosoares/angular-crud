@@ -9,6 +9,7 @@ import { UserFormComponent } from './pages/users/user-form/user-form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './pages/home/home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ChatComponent } from './pages/chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     UsersListComponent,
     UserFormComponent,
-    HomeComponent
+    HomeComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
